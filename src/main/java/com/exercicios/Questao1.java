@@ -1,6 +1,7 @@
 package com.exercicios;
 
 import java.sql.*;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Questao1 {
@@ -9,6 +10,10 @@ public class Questao1 {
     private static final String SENHA = "";
 
     public static void main(String[] args) {
+        executar();
+    }
+
+    public static void executar() {
         Scanner scanner = new Scanner(System.in);
         String continuar = "S";
 
@@ -62,8 +67,7 @@ public class Questao1 {
             continuar = scanner.nextLine();
         }
 
-        scanner.close();
-        System.out.println("\n✓ Programa encerrado.");
+        System.out.println("\n✓ Cadastro finalizado.\n");
     }
 
     private static boolean inserirAluno(int numero, String nome, String curso, 
