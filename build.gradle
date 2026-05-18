@@ -20,7 +20,7 @@ java {
 }
 
 application {
-    mainClass = 'com.exercicios.Questao2'
+    mainClass = 'com.exercicios.Menu'
 }
 
 tasks.register('runQuestao1', JavaExec) {
