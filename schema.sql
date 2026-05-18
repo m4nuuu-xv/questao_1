@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS exercicios_bd;
+
+USE exercicios_bd;
+
+CREATE TABLE IF NOT EXISTS alunos (
+    numero INT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    curso VARCHAR(100) NOT NULL,
+    nota1 DOUBLE NOT NULL,
+    nota2 DOUBLE NOT NULL,
+    nota3 DOUBLE NOT NULL,
+    nota4 DOUBLE NOT NULL
+);
