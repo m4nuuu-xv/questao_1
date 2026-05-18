@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.exercicios'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.mysql:mysql-connector-j:8.3.0'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+application {
+    mainClass = 'com.exercicios.Menu'
+}
+
+tasks.register('runQuestao1', JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.exercicios.Questao1'
+}
+
+tasks.register('runQuestao2', JavaExec) {
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'com.exercicios.Questao2'
+}
